@@ -9,6 +9,7 @@ on:
 
 permissions:
   pages: write
+  repository-projects: write
 
 jobs:
   docs:
