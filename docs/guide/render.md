@@ -16,7 +16,7 @@ https://render.com/
 
 ## 关联 github 账户
 
-![render2](./render2.jpg)
+![render2](../public/render2.jpg)
 
 ## 部署新项目
 
@@ -24,7 +24,7 @@ https://render.com/
 
 > Render 入口为 Cloudflare cdn，如果可以优选到亚洲地区 cloudflare ip，新加坡区速度最好。否则 cloudflare 默认美国线路，选美区速度最好。
 
-![render3](./render3-1.png)
+![render3](../public/render3-1.png)
 
 > 如果你不喜欢 docker，可以直接写 npm 命令。
 >

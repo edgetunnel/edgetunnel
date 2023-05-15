@@ -6,10 +6,10 @@
 
 ## Fork 本项目到自己 Github 下
 
-![fork](./fork.jpg)
+![fork](../public/fork.jpg)
 
 **请定期按照 github 的提示，同步 code 到自己的项目**。
-![sync](./sync.jpg)
+![sync](../public/sync.jpg)
 
 ## 登录 Deno deploy
 
@@ -20,7 +20,7 @@
 ## New Project
 
 请在配置过程中 **记住 UUID**, 并且选择正确的部署入口文件。`apps\deno-vless\src\main.ts`
-![deno-link](./deno-link.jpg)
+![deno-link](../public/deno-link.jpg)
 
 ### 流程演示
 
@@ -39,13 +39,13 @@ https://raw.githubusercontent.com/zizifn/edgetunnel/main/doc/deno-deploy2.gif
 点击 View 项目会自动打开。一开始返回 `401`.
 
 > 如果遇到 deno 生成域名不能访问的情况，请自己在 setting 里面绑定自己域名。
-> 
+>
 > 只要 deno 网站可以访问，你生成的服务就应该可以访问。
-> 
+>
 > 目前移动宽带貌似有这种问题。
 
 不要慌张, 把你设置的 `UUID` 输入到弹出的用户名或者密码中。
 
 然后会自动跳转到如下界面。
 
-![index](./index.jpg)
+![index](../public/index.jpg)
