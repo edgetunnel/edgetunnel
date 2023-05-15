@@ -105,7 +105,7 @@ https://github.com/2dust/v2rayN
 ## 建立 cloudflare worker 反代 （可选）
 
 ```js
-const targetHost = "xxx.xxxx.dev"; //你的 edge function 的hostname
+const targetHost = "xxx.xxxx.dev"; //你的 edge function 的 hostname
 addEventListener("fetch", (event) => {
   let url = new URL(event.request.url);
   url.hostname = targetHost;
