@@ -34,7 +34,7 @@ https://render.com/
 > | Start Command | `npm run node-vless:start`              |
 
 **⚠️ 添加环境变量 UUID**
-![render4](./render4-1.png)
+![render4](../public/render4-1.png)
 
 ## 访问主页面
 
