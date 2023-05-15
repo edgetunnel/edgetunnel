@@ -1,0 +1,19 @@
+{
+  "name": "edgetunnel",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "authors": {
+    "name": "",
+    "email": ""
+  },
+  "repository": "edgetunnel/edgetunnel",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.62"
+  }
+}
