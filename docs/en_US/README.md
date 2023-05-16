@@ -1,27 +1,3 @@
----
-home: true
-heroText: V2ray Edge
-tagline: V2ray in Edge runtime
-actions:
-  - text: 部署到 Cloudflare Worker
-    link: /guide/cf-worker.html
-    type: primary
-  - text: 加速 Cloudflare
-    link: /guide/cf-ip.html
-    type: primary
-  - text: V2ray Node.js
-    link: /guide/v2ray-nodejs.html
-    type: primary
-features:
-  - title: 无需任何服务器
-    details: 快速部署到 Cloudflare Worker，无需任何服务器就可以运行 v2ray 服务。
-  - title: 优化 Cloudflare IP
-    details: 优选 Cloudflare IP 和 Cloudflare 中转 IP
-  - title: Node.js 版本
-    details: 在 Node.js 实现 Vless 协议。
-footer: Licensed under GPL-2.0 license
----
-
 # V2ray Edge（Beta）
 
 众所周知，V2ray 是基于 `go` 的，导致原版 V2ray 无法部署到基于 `javaScript (V8)` 的平台上。
@@ -31,6 +7,8 @@ footer: Licensed under GPL-2.0 license
 > 本项目纯属技术性验证，探索最新的 web standard 和 edge runtime。如有人碰巧发现，请勿乱用，不给予任何保证。
 
 ## V2ray Edge server --- Cloudflare Worker
+
+> 再次无比感谢 Cloudflare 对技术的探索，让我可以实现这个项目。
 
 [cf-worker](./guide/cf-worker.md)
 
@@ -62,8 +40,6 @@ export UUID=ce6d9073-7085-4cb1-a64d-382489a2af94 PORT=4100 SMALLRAM=true node  .
 
 ## 客户端 v2rayN 配置
 
-凡是支持 VLESS 协议的客户端，都可以使用。
-
 ### Windows 版本
 
 https://github.com/2dust/v2rayN
@@ -81,6 +57,23 @@ https://github.com/2dust/v2rayN
 > 需要美国区账户
 
 [shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)
+
+## 建立 cloudflare worker 反代 （可选）
+
+```js
+const targetHost = "xxx.xxxx.dev"; //你的 edge function 的hostname
+addEventListener("fetch", (event) => {
+  let url = new URL(event.request.url);
+  url.hostname = targetHost;
+  // url.protocol = 'http';
+  // url.pathname = '/index';
+  // url.port = '443';
+  let request = new Request(url, event.request);
+  event.respondWith(fetch(request));
+});
+```
+
+优选 IP https://github.com/XIU2/CloudflareSpeedTest
 
 # FAQ
 
