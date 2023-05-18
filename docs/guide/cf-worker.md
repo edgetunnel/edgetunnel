@@ -15,7 +15,7 @@ https://github.com/zizifn/edgetunnel
 
 ![fork](../public/fork.jpg)
 
-请定期同步 fork，具体方式请参考 [Github 文档](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork)。
+请**一定要定期同步** fork，具体方式请参考 [Github 文档](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork)。
 
 ## 注册 Cloudflare 账户
 
@@ -26,8 +26,53 @@ https://www.cloudflare.com/
 ## 创建 Cloudflare Pages
 
 ![cf-page](../public/cf-pages.png)
+![cf-page2](../public/cf-pages2.png)
 
-## TOS
+### 连接 GITHUB 账户 和 repo
+
+连接 GITHUB 账户， 并且要选择你 fork 的 repo。
+
+![github-edgetunnel](../public/github-edgetunnel.png)
+
+#### 填写 Pages build 信息
+
+| 选项            | 值                      |
+| --------------- | ----------------------- |
+| Build Command   | npm run cf-page-vless   |
+| Build Directory | dist/apps/cf-page-vless |
+
+| 环境变量     | 值                                   |
+| ------------ | ------------------------------------ |
+| UUID         | b7625108-80fb-4544-a1f2-aa40c931aa52 |
+| NODE_VERSION | 18                                   |
+
+> 请自己生成一个 UUID
+
+![build-config](../public/edgetunnel-build-config.png)
+
+### 部署成功访问 Pages URL
+
+> 请在页面账户和密码，输入你的 UUID
+
+访问 Pages 项目地址，并且点击分享 Vless，扫码导入配置。
+
+![edgetunnel-overvide](../public/edgetunnel-overview.png)
+
+## 修改 Cloudflare Pages 的设置
+
+如果忘记 UUID 或者想修改配置，可以在 Pages 的设置里面修改。
+
+### 自定义域名
+
+![custom_domain](../public/custom_domain.png)
+
+### 使用 Cloudflare Pages 最新 build V2 系统
+
+![build-v](../public/pages-buildV2.png)
+
+## Cloudflare TOS
+
+按照我对 Cloudflare TOS 理解。Cloudflare Pages 是可以运行代理软件的。
 
 https://www.cloudflare.com/supplemental-terms/
 
