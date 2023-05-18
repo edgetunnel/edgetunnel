@@ -6,10 +6,10 @@
 
 ## Fork 本项目到自己 Github 下
 
-![fork](../public/fork.jpg)
+![fork](../../public/fork.jpg)
 
 **请定期按照 github 的提示，同步 code 到自己的项目**。
-![sync](../public/sync.jpg)
+![sync](../../public/sync.jpg)
 
 ## 登录 Deno deploy
 
@@ -20,7 +20,7 @@
 ## New Project
 
 请在配置过程中 **记住 UUID**, 并且选择正确的部署入口文件。`apps\deno-vless\src\main.ts`
-![deno-link](../public/deno-link.jpg)
+![deno-link](../../public/deno-link.jpg)
 
 ### 流程演示
 
@@ -48,4 +48,4 @@ https://raw.githubusercontent.com/zizifn/edgetunnel/main/doc/deno-deploy2.gif
 
 然后会自动跳转到如下界面。
 
-![index](../public/index.jpg)
+![index](../../public/index.jpg)
