@@ -3,8 +3,8 @@ home: true
 heroText: V2ray Edge
 tagline: V2ray in Edge runtime
 actions:
-  - text: 部署到 Cloudflare Worker
-    link: /guide/cf-worker.html
+  - text: 部署到 Cloudflare Pages
+    link: /guide/cf-pages.html
     type: primary
   - text: 加速 Cloudflare
     link: /guide/cf-ip.html
@@ -12,6 +12,10 @@ actions:
   - text: V2ray Node.js
     link: /guide/v2ray-nodejs.html
     type: primary
+  - text: 部署到 Cloudflare Worker
+    link: /guide/cf-worker.html
+    type: secondary
+
 features:
   - title: 无需任何服务器
     details: 快速部署到 Cloudflare Worker，无需任何服务器就可以运行 v2ray 服务。
