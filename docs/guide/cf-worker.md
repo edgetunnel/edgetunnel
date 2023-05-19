@@ -11,6 +11,8 @@ footer: Licensed under GPL-2.0 license
 
 ## Cloudflare Worker 代码
 
+把下面代码 copy 到 Cloudflare Worker 在线编辑器内。
+
 https://raw.githubusercontent.com/zizifn/edgetunnel/main/libs/cf-worker-vless/cf-worker-vless-dev.js
 
 ## 修改 UUID
