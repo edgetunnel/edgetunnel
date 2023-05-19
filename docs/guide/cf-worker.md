@@ -15,4 +15,8 @@ https://raw.githubusercontent.com/zizifn/edgetunnel/main/libs/cf-worker-vless/cf
 
 ## 修改 UUID
 
+::: warning
+只有 UUID 是强制，其他参数无所谓。WS PATH 随便填写。
+:::
+
 ![cf-worker-code](../public/cf-worker-code.png)

@@ -5,7 +5,7 @@ tagline: 部署到 Cloudflare Pages
 footer: Licensed under GPL-2.0 license
 ---
 
-# 部署到 Cloudflare Worker
+# 部署到 Cloudflare Pages
 
 > 再次无比感谢 Cloudflare 对技术的探索，让我可以实现这个项目。
 
