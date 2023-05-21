@@ -5,7 +5,7 @@ export default defineUserConfig({
   lang: "en-US",
   title: "Hello VuePress",
   description: "Just playing around",
-  // base: "/edgetunnel/",
+  base: "/edgetunnel/",
   locales: {
     // The key is the path for the locale to be nested under.
     // As a special case, the default locale can use '/' as its path.
