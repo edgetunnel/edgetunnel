@@ -10,6 +10,6 @@ https://edgetunnel.github.io/edgetunnel/
 
 # Feedback
 
-If you have any questions, please open GitHub issue or use https://t.me/edgetunnel for communication.
+If you have any questions, please open GitHub issue for communication.
 
 > no emotional damage from the community.
